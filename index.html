@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=Bungee&family=Julius+Sans+One&family=Kanit:wght@200;300;400;600;700&family=Lobster&family=Montserrat:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Score board</title>
+</head>
+<body class="relative">
+    <!-- Update Skor -->
+    <section id="section" class="w-full h-screen bg-teal-500 grid grid-cols-1">
+        <div class="bg-sky-500 w-full flex justify-center items-center">
+            <h1 id="skorPlayerSatu" class="font-primary text-gray-100 font-semibold text-9xl rotate-90  h-32 w-36 flex items-center justify-center"><span class="hitungSkorSatu">0</span></h1>
+            <h1 class="font-primary text-gray-100 font-semibold text-3xl  rotate-90 -mr-20">Player 1</h1>
+        </div>
+        <div class="bg-red-500 w-full flex justify-center items-center">
+            <h1 id="skorPlayerDua" class="font-primary text-gray-100 font-semibold rotate-90  text-9xl h-32 w-36 flex items-center justify-center"><span class="hitungSkorDua">0</span></h1>
+            <h1 class="font-primary text-gray-100 font-semibold rotate-90 -mr-20 text-3xl justify-self-center">Player 2</h1>
+        </div>
+    </section>
+    <!-- Update set -->
+    <section id=" sectionDua" class="absolute w-16 h-32 bg-gray-100 rounded-lg top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-1 overflow-hidden">
+        <div class="flex justify-center items-center">
+            <h2 id="setPSatu" class="flex justify-center items-center font-primary text-slate-800 font-semibold text-4xl rotate-90 w-full h-full"><span class="setSatu">0</span></h2>
+        </div>
+        <div class="flex justify-center items-center">
+            <h2 id="setPDua" class="flex justify-center items-center font-primary text-slate-800 font-semibold text-4xl rotate-90 w-full h-full"><span class="setDua">0</span></h2>
+        </div>
+    </section>
+    <!-- min skor Satu-->
+    <button id="minSkorSatu" class="bg-gray-100 rounded-br-lg w-[60px] h-[80px] absolute top-0">
+        <h2 id="minSatu" class="font-primary font-semibold text-2xl text-slate-800">|</h2>
+    </button>
+    <!-- min skor Dua -->
+    <button id="minSkorDua" class="bg-gray-100 rounded-tr-lg w-[60px] h-[80px] absolute bottom-0">
+        <h2 id="minDua" class="font-primary font-semibold text-2xl text-slate-800">|</h2>
+    </button>
+    <!-- Reset skor -->
+    <button id="Reset" class="absolute w-12 h-24 bg-gray-100 rounded-r-lg top-1/2 left-0 transform -translate-y-1/2 overflow-hidden">
+        <h1 class="font-primary font-semibold text-slate-800 rotate-90 text-xl">Reset</h1>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
